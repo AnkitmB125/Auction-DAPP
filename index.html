@@ -1,0 +1,96 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AuctionDapp</title>
+	<link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./bootstrap-theme.min.css" rel="stylesheet">
+
+    <link href="app.css" rel='stylesheet' type='text/css'>
+<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="index.js"></script>
+
+  </head>
+  <body id="homepageBody">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          
+          <a class="navbar-brand" href="#">AuctionDapp</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#auctionRow">Auctions</a></li>
+            <li><a href="createAuction.html">New Auction</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div role="main">
+
+   	<div class="row" id="headerRow">
+	  <div>
+	    <div id="headerLabel"><h1>Decentralized auctions for everyone.</h1></div>
+	    <p>
+		  <a role="button" class="btn btn-lg btn-primary"
+		  href="createAuction.html" id="createAuctionButton">Create an auction</a>
+		</p>
+	    
+	  </div>
+      </div>
+
+     
+      <div class="row" id="auctionRow">
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+	  <div id="auctionSection">
+	    <h1>Currently Running Auctions</h1>
+	  </div>
+	  
+	  <table class="table table-striped">
+	    <thead>
+	      <tr>
+		<th>Title</th>
+		<th>Current Bid</th>
+		<th># of Bids</th>
+	      </tr>
+	    </thead>
+	    <tbody id="userAuctions"></tbody>
+	  </table>
+	  <hr/>
+	  <h1>Ended Auctions</h1>
+	  <table class="table table-striped">
+	    <thead>
+	      <tr>
+		<th>Title</th>
+		<th>Winning Bid</th>
+		<th># of Bids</th>
+		  </tr>
+	    </thead>
+	    <tbody id="endAuction"></tbody>
+	  </table>
+	  <br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+
+      </div>
+      
+      
+      
+      
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>

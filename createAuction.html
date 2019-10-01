@@ -1,0 +1,74 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AuctionHouse Dapp</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="app.css" rel='stylesheet' type='text/css'>
+    <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+    <script src="index.js"></script>
+    
+    </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">AuctionDapp</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#auctionSection">Auctions</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <div class="row">
+	<div class="col-md-8">
+	 
+	  
+	
+
+	  <h1>Auction off your item</h1>
+	  <table class="auctionDetails">
+	    <tr><td class="auctionLabel"><label for="nameToAuction">RecordId to Auction:</label></td><td><input type="text"
+	    id="nameToAuction" placeholder="MyAuction"></input>
+		<br>
+	    </td></tr>
+
+	    <tr><td class="auctionLabel"><label for="contractAddress">Contract
+	    Address:</label></td><td><input type="text"
+	    id="contractAddress" placeholder="0x536d6b87f21d8bbf23dd7f33fc3ca90e85cba0b6"></input>
+		<br>
+		
+	    </td></tr>
+      <tr><td class="auctionLabel"><label for="title">Title for the product:</label></td><td><input type="text" id="title" placeholder="Laptop, Mobile"></input></td></tr>
+      <tr><td class="auctionLabel"><label for="description">Description of the product:</label></td><td><textarea rows="4" cols="60" id="description" ></textarea></td></tr>
+	    <tr><td class="auctionLabel"><label for="startingPrice">Starting Price in Ether:</label></td><td><input type="text" id="startingPrice" placeholder="2.2"></input></td></tr>
+	    <tr><td class="auctionLabel"><label for="deadline">Deadline in blocks:</label></td><td><input type="text" id="deadline" placeholder="200"></input></td></tr>
+	    <tr><td class="auctionLabel">&nbsp;</td><td><button id="createAuction" onclick="createAuction()">Create Auction</button></td></tr>
+	  </table>
+	  
+	  <hr />
+	 
+
+	</div>
+
+
+	<div class="col-md-4">
+	  <div id="right-column"></div>
+	</div>
+	
+      </div> 
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
+</html>
